@@ -16,14 +16,14 @@ class Rectangle
 	 * The top-left corner of the rectangle.
 	 * @returns {Vector}
 	 */
-	get TopLeft() {
+	get top_left() {
 		return new Vector(this.x, this.y);
 	}
 	/**
 	 * Sets the top-left corner of the rectangle.
 	 * @param {Vector} point	The point to set it to.
 	 */
-	set TopLeft(point) {
+	set top_left(point) {
 		this.x = point.x;
 		this.y = point.y;
 	}
@@ -32,14 +32,14 @@ class Rectangle
 	 * The top-right corner of the rectangle.
 	 * @returns {Vector}
 	 */
-	get TopRight() {
+	get top_right() {
 		return new Vector(this.x + this.width, this.y);
 	}
 	/**
 	 * Sets the top-right corner of the rectangle.
 	 * @param {Vector} point	The point to set it to.
 	 */
-	set TopRight(point) {
+	set top_right(point) {
 		this.width = point.x - this.x;
 		this.y = point.y;
 	}
@@ -48,14 +48,14 @@ class Rectangle
 	 * The bottom-left corner of the rectangle.
 	 * @returns {Vector}
 	 */
-	get BottomLeft() {
+	get bottom_left() {
 		return new Vector(this.x, this.y + this.height);
 	}
 	/**
 	 * Sets the bottom-left corner of the rectangle.
 	 * @param {Vector} point	The point to set it to.
 	 */
-	set BottomLeft(point) {
+	set bottom_left(point) {
 		this.width = point.x;
 		this.y = point.y - this.y;
 	}
@@ -71,7 +71,7 @@ class Rectangle
 	 * Sets the bottom-right corner of the rectangle.
 	 * @param {Vector} point	The point to set it to.
 	 */
-	set BottomRight(point) {
+	set bottom_right(point) {
 		this.width = point.x - this.x;
 		this.y = point.y - this.y;
 	}
@@ -80,7 +80,7 @@ class Rectangle
 	 * The centre of the rectangle.
 	 * @returns {Vector}
 	 */
-	get Centre() {
+	get centre() {
 		return new Vector(
 			this.x + (this.width/2),
 			this.y + (this.height/2)
@@ -91,14 +91,14 @@ class Rectangle
 	 * The Y coordinate of the top of the rectangle.
 	 * @returns {Number}
 	 */
-	get Top() {
+	get top() {
 		return this.y;
 	}
 	/**
 	 * Sets the Y coordinate of the top of the rectangle.
 	 * @param {Number}	y
 	 */
-	set Top(y) {
+	set top(y) {
 		this.y = y;
 	}
 	
@@ -106,14 +106,14 @@ class Rectangle
 	 * The Y coordinate of the bottom of the rectangle.
 	 * @returns {Number}
 	 */
-	get Bottom() {
+	get bottom() {
 		return this.y + this.height;
 	}
 	/**
 	 * Sets the Y coordinate of the bottom of the rectangle.
 	 * @param {Number}	y
 	 */
-	set Bottom(y) {
+	set bottom(y) {
 		this.height = y - this.y;
 	}
 	
@@ -121,14 +121,14 @@ class Rectangle
 	 * The X coordinate of the left side of the rectangle.
 	 * @returns {Number}
 	 */
-	get Left() {
+	get left() {
 		return this.x;
 	}
 	/**
 	 * Sets the X coordinate of the left of the rectangle.
 	 * @param {Number}	x
 	 */
-	set Left(x) {
+	set left(x) {
 		this.x = x;
 	}
 	
@@ -136,14 +136,14 @@ class Rectangle
 	 * The X coordinate of the right side of the rectangle.
 	 * @returns {Number}
 	 */
-	get Right() {
+	get right() {
 		return this.x + this.width;
 	}
 	/**
 	 * Sets the X coordinate of the right of the rectangle.
 	 * @param {Number}	x
 	 */
-	set Right(x) {
+	set right(x) {
 		this.x = x - this.x;
 	}
 	
@@ -151,14 +151,14 @@ class Rectangle
 	 * The size of this rectangle.
 	 * @returns {Vector}
 	 */
-	get Size() {
+	get size() {
 		return new Vector(this.width, this.height);
 	}
 	/**
 	 * Sets the size of the rectangle.
 	 * @param {Vector} newSize The new size of the rectangle.
 	 */
-	set Size(newSize) {
+	set size(newSize) {
 		this.width = newSize.x;
 		this.height = newSize.y;
 	}
