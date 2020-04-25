@@ -4,7 +4,7 @@
   "description": "Generic SVG image generation & shape manipulation library",
   "main": "src/index.mjs",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npx ava"
   },
   "repository": {
     "type": "git",
@@ -25,5 +25,11 @@
   "bugs": {
     "url": "https://github.com/sbrl/svgwriter/issues"
   },
-  "homepage": "https://github.com/sbrl/svgwriter#readme"
+  "homepage": "https://github.com/sbrl/svgwriter#readme",
+  "dependencies": {
+    "xmlwriter": "^1.0.2"
+  },
+  "devDependencies": {
+    "ava": "^3.7.1"
+  }
 }
