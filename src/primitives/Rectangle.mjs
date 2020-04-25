@@ -64,7 +64,7 @@ class Rectangle
 	 * The bottom-right corner of the rectangle.
 	 * @returns {Vector}
 	 */
-	get BottomRight() {
+	get bottom_right() {
 		return new Vector(this.x + this.width, this.y + this.height);
 	}
 	/**
@@ -242,6 +242,6 @@ class Rectangle
  * Don't forget to clone it before editing!
  * @type {Rectangle}
  */
-Rectangle.Zero = new Rectangle(0, 0, 0, 0);
+Rectangle.zero = new Rectangle(0, 0, 0, 0);
 
 export default Rectangle;

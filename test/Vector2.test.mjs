@@ -226,8 +226,7 @@ test("maxComponent", (t) => {
 	t.is(v.maxComponent, -8, "maxComponent - negative C");
 });
 test("To String", (t) => {
-	var v = new Vector2(5, 8),
-		expected = "(5, 8)";
+	var v = new Vector2(5, 8);
 	
-	t.is(v.toString(), expected, "To string");
+	t.is(v.toString(), "(5, 8)", "To string");
 });
