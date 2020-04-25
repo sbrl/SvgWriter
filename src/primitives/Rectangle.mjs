@@ -184,15 +184,15 @@ class Rectangle
 	
 	/**
 	 * Figures out whether this rectangle overlaps another rectangle.
-	 * @param	{Rectangle}	otherRectangle	The other rectangle to check the overlap of.
+	 * @param	{Rectangle}	other_rectangle	The other rectangle to check the overlap of.
 	 * @return	{bool}		Whether this rectangle overlaps another rectangle.
 	 */
-	overlaps(otherRectangle)
+	overlaps(other_rectangle)
 	{
-		if(this.Top > otherRectangle.Bottom ||
-			this.Bottom < otherRectangle.Top ||
-			this.Left > otherRectangle.Right ||
-			this.Right < otherRectangle.Left)
+		if(this.top > other_rectangle.bottom ||
+			this.bottom < other_rectangle.top ||
+			this.left > other_rectangle.right ||
+			this.right < other_rectangle.left)
 			return false;
 
 		return true;
@@ -205,20 +205,20 @@ class Rectangle
 	 */
 	is_inside_vector(v) {
 		return v.x >= this.x && v.y >= this.y &&
-			v.x <= this.Right && v.y <= this.Bottom;
+			v.x <= this.right && v.y <= this.bottom;
 	}
 	
 	/**
 	 * Works out if this Rectangle falls completely within the specified
 	 * rectangle.
-	 * @param	{Rectangle}	otherRectangle	The other rectangle to compare against.
+	 * @param	{Rectangle}	other_rectangle	The other rectangle to compare against.
 	 * @return	{Boolean}	Whether this Rectangle faalls within the specified Rectangle.
 	 */
-	is_inside(otherRectangle) {
-		if(this.Top >= otherRectangle.Top &&
-			this.Bottom <= otherRectangle.Bottom &&
-			this.Left >= otherRectangle.Left &&
-			this.Right <= otherRectangle.Right)
+	is_inside(other_rectangle) {
+		if(this.top >= other_rectangle.top &&
+			this.bottom <= other_rectangle.bottom &&
+			this.left >= other_rectangle.left &&
+			this.right <= other_rectangle.right)
 			return true;
 		return false;
 	}
