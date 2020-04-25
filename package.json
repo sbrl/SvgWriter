@@ -1,0 +1,29 @@
+{
+  "name": "svgwriter",
+  "version": "1.0.0",
+  "description": "Generic SVG image generation & shape manipulation library",
+  "main": "src/index.mjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sbrl/svgwriter.git"
+  },
+  "keywords": [
+    "svg",
+    "generation",
+    "library",
+    "shapes",
+    "xml",
+    "graphics",
+    "image-generation",
+    "image"
+  ],
+  "author": "Starbeamrainbowlabs",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/sbrl/svgwriter/issues"
+  },
+  "homepage": "https://github.com/sbrl/svgwriter#readme"
+}
