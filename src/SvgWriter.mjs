@@ -19,8 +19,8 @@ class SvgWriter {
 	 * @param	{String}	[heightspec="100%"]
 	 * @param	{Rectangle}	[viewBox=null]
 	 */
-	constructor(widthspec = "100%", heightspec = "100%", viewBox = null, pretty_print = false) {
-		this.unit_suffix = "";
+	constructor(widthspec = "100%", heightspec = "100%", viewBox = null, pretty_print = false, unit_suffix =  "") {
+		this.unit_suffix = unit_suffix;
 		
 		// ----------------------------------
 		
