@@ -30,6 +30,6 @@
     "xmlwriter": "^1.0.2"
   },
   "devDependencies": {
-    "ava": "^3.7.1"
+    "ava": "^3.11.0"
   }
 }
