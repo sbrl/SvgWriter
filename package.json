@@ -3,6 +3,7 @@
   "version": "1.0.2",
   "description": "Generic SVG image generation & shape manipulation library",
   "main": "src/index.mjs",
+  "files": [ "src/" ],
   "scripts": {
     "test": "npx ava"
   },
